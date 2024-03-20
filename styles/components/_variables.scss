@@ -1,0 +1,24 @@
+//colors
+
+
+$primary: red;
+$secondary: blue;
+
+$background-light: #f5f5f5;
+
+$text-light: #f5f5f5;
+$text-dark:#0f0f0f;
+
+//paddings & margins
+
+$padding-primary: 2rem;
+
+//breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

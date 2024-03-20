@@ -1,0 +1,1 @@
+site inspired fully by design of sarigato.com & coded for learning purposes only.
