@@ -5,9 +5,10 @@
 }
 
 body{
- max-width: 1700px;
+ max-width: $max-width;
  margin: 0 auto;
  background:$background-light;
  color:$text-dark;
+ font-family: $font-primary;
 
 }

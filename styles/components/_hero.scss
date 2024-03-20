@@ -1,0 +1,19 @@
+.hero{
+ height: 100dvh;
+ padding: $padding-primary;
+ &-top{
+  width:100%;
+  margin:0 auto;
+  text-align: center;
+ }
+}
+
+
+  @media (max-width: map-get($grid-breakpoints, md)) {
+    
+   .hero{
+    &-top{
+     display: none;
+    }
+   }
+  }

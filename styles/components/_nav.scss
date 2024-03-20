@@ -1,16 +1,31 @@
-.nav{
+.header{
+ position: fixed;
+ max-width: $max-width;
+ width: 100%;
+
+&-container{
  padding: $padding-primary;
  display: flex;
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
 }
-
-  @media (max-width: map-get($grid-breakpoints, md)) {
-    
-   .nav{
-    &-middle{
-     display: none;
-    }
-   }
+&-logo{
+ &__img{
+  img{
+   display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
   }
+ }
+}
+}
+
+.nav{
+ &-menu{
+  button{
+   @include button-primary
+  }
+ }
+}
