@@ -16,10 +16,26 @@
    </picture>
   </div>
      
- <nav class="nav">
+ <div class="nav">
   
-   <div class="nav-menu"><button>menu</button></div>
- </nav>
+   <div class="nav-menu"><button id="nav-btn" role="button">
+    <p id="nav-btn-open" class="">open</p>
+    <p id="nav-btn-close" class="hide">close</p>
+   </button></div>
+   <nav class="nav-wrapper hide">
+    <div class="nav-container">
+      <ul>
+        <li><a href="">Why us</a></li>
+        <li><a href="">What we do</a></li>
+        <li><a href="">Clients</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Why us</a></li>
+        <li><a href="">What we do</a></li>
+        <li><a href="">Clients</a></li>        
+      </ul>
+    </div>
+   </nav>
+ </div>
  </div>
 </header>
 <main>
@@ -33,5 +49,6 @@
  body
 </main>
 <footer>footer</footer>
+<script src="scripts/main.js"></script>
 </body>
 </html>
