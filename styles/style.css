@@ -39,7 +39,6 @@ body {
   top: 0;
   background-color: #f5f5f5;
   padding: 2rem;
-  height: 100dvh;
 }
 .nav-menu {
   display: flex;
@@ -100,11 +99,18 @@ body {
 .hero {
   height: 100dvh;
   padding: 2rem;
+  background: url(/images/texture.cc1aec9d20c9fef3831e.jpg);
+  background-repeat: repeat;
 }
 .hero-top {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+.hero-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
