@@ -11,6 +11,10 @@
  align-items: center;
 }
 &-logo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: .5rem;
  &__img{
   img{
    display: block;
@@ -26,7 +30,6 @@
  position: fixed;
  right: 0;
  top:0;
- background-color: $background-light;
  padding: $padding-primary;
 // height: 100dvh;
  &-menu{
@@ -34,20 +37,24 @@
   align-items:end;
   justify-content: end;
   button{
-   @include button-primary
+   @include button-primary;
+   z-index:100;
   }
  }
  &-container{
-  margin-top: 5rem;
-  min-width: 300px;
-  padding-left: 5rem;
+  width: 100vw;
+  background: white;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  right: 0;
   ul{
    width: 100%;
    li{
     padding: .5rem;
     list-style: none;
     width: 100%;
-     transition: all .2s linear;
+    transition: all .2s linear;
     &:hover{
      border-top: 1px solid $text-dark;
      border-bottom: 1px solid $text-dark;
@@ -76,3 +83,14 @@
 .hide{
  display: none;
 }
+
+ @media (min-width: map-get($grid-breakpoints, md)) {
+    
+    .nav{
+     &-container{
+      width: 300px;
+     }
+    }
+  }
+
+  

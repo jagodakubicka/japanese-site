@@ -25,6 +25,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
 .header-logo__img img {
   display: block;
   width: 80px;
@@ -37,7 +43,6 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  background-color: #f5f5f5;
   padding: 2rem;
 }
 .nav-menu {
@@ -53,15 +58,19 @@ body {
   cursor: pointer;
   transition: background 0.5s ease-in-out;
   font-family: "Shippori Mincho B1", serif;
+  z-index: 100;
 }
 .nav-menu button:hover {
   background-color: #0f0f0f;
   color: #f5f5f5;
 }
 .nav-container {
-  margin-top: 5rem;
-  min-width: 300px;
-  padding-left: 5rem;
+  width: 100vw;
+  background: white;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .nav-container ul {
   width: 100%;
@@ -96,11 +105,16 @@ body {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .nav-container {
+    width: 300px;
+  }
+}
 .hero {
   height: 100dvh;
-  padding: 2rem;
   background: url(/images/texture.cc1aec9d20c9fef3831e.jpg);
   background-repeat: repeat;
+  z-index: 0;
 }
 .hero-top {
   width: 100%;
@@ -110,11 +124,33 @@ body {
 .hero-main {
   display: flex;
   align-items: center;
+  flex-direction: column-reverse;
   justify-content: space-between;
 }
+.hero-main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.hero-main__images img {
+  max-height: 100vh;
+}
+.hero-main__overlap {
+  height: 40vh;
+  width: 100%;
+  background-color: rgba(159, 29, 124, 0.5);
+}
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .hero-top {
     display: none;
+  }
+  .hero-main {
+    flex-direction: row;
+  }
+  .hero-main__overlap {
+    height: 100vh;
+    width: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
