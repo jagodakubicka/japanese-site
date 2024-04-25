@@ -1,0 +1,79 @@
+.nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 2rem;
+}
+.nav-menu {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.nav-menu button {
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  color: #0f0f0f;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+  font-family: "Shippori Mincho B1", serif;
+  z-index: 100;
+}
+.nav-menu button:hover {
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+}
+.nav-container {
+  width: 100vw;
+  background: white;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container ul li {
+  padding: 0.5rem;
+  list-style: none;
+  width: 100%;
+  transition: all 0.2s linear;
+}
+.nav-container ul li:hover {
+  border-top: 1px solid #0f0f0f;
+  border-bottom: 1px solid #0f0f0f;
+}
+.nav-container ul li:hover a {
+  transform: translateX(15px);
+}
+.nav-container ul li a {
+  display: inline-block;
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 1.5rem;
+  color: #0f0f0f;
+  font-weight: bolder;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  transition: all 0.2s linear;
+  height: 100%;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    width: 300px;
+  }
+}

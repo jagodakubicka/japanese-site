@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+:root{
+ /* grid breakpoints */
+ --xs: 0;
+ --sm: 576px;
+ --md: 768px;
+ --lg: 992px;
+ --xl: 1200px;
+ --xxl:1400px;
+
+  /* max&min widths */
+ --max-width: 1700px;
+
+ /* colors */
+--primary: rgba(89, 32, 41, 0.726);
+--secondary: blue;
+
+--background-light: #f5f5f5;
+--background-dark: #0f0f0f;
+
+--text-light: #f5f5f5;
+--text-dark:#0f0f0f;
+
+/* typography */
+--font-primary:"Shippori Mincho B1", serif;
+
+/* fonts sizes */
+}
