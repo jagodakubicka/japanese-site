@@ -3,6 +3,7 @@
   right: 0;
   top: 0;
   padding: 2rem;
+  z-index: 100;
 }
 .nav-menu {
   display: flex;

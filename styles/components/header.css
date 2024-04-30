@@ -2,6 +2,7 @@
   position: fixed;
   max-width: 1700px;
   width: 100%;
+  z-index: 100;
 }
 .header-container {
   padding: 2rem;
