@@ -1,68 +1,63 @@
 
 .hero {
-  height: 90dvh;
+  min-height: 90dvh;
+  width: 100%;
+  height: 100%;
   z-index: 0;
 }
 .hero-top {
  display: none;
  z-index: 100;
 }
-.hero-main {
+.hero-main{
+  min-height: 90dvh;
+  width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column-reverse;
-  justify-content: space-between;
-  height: 90dvh;
+  justify-content: center;
+  align-items: center;
 }
-.hero-main__wrapper {
+.hero-main__wrapper{
+  background-image: url(/images/paper-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  align-items: center;
   flex-direction: column-reverse;
-  justify-content: space-between;
-  background: url(/images/paper-bg.webp);
-  background-repeat: repeat;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 100%;
   position: relative;
-
+  &::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+  }
 }
-.hero-main__wrapper::before{
-  content:'';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top:0;
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(2px);
-  z-index: 1;
-}
-.hero-main__content {
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  justify-content: start;
-  flex: 2 1 auto;
-  gap: 2rem;
-  padding: 2rem;
+.hero-main__content{
   z-index: 10;
 }
-.hero-main__images {
-  flex: 1 1 auto;
-   z-index: 10;
+.hero-main__images{
+  z-index: 10;
+  height: fit-content;
+  & img{
+    max-height:600px;
+     margin-top: -200px;
+ 
+  }
 }
-.hero-main__images img {
-  max-height: 100%;
-  height: 80dvh;
-}
-.hero-main__overlap {
-  flex: 1 1 auto;
-  height: 40vh;
-  width: 100%;
+.hero-main__overlap{
   background-color: var(--primary);
+  width: 100%;
+  height: 45vh;
 }
-
 @media (min-width:768px) {
   .hero-top {
-    display: inline-block;
+  display: inline-block;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -71,14 +66,24 @@
   left:0;
   right: 0;
   }
-  .hero-main {
+  .hero-main{
     flex-direction: row;
   }
-  .hero-main__wrapper {
+  .hero-main__wrapper{
     flex-direction: row;
+    width: 60%;
   }
-  .hero-main__overlap {
-    height: 90vh;
-    width: unset;
+  .hero-main__overlap{
+  width: 40%;
+  height: 100%;
+  min-height: 90vh;
+}
+.hero-main__images{
+  & img{
+    max-height: 750px;
+    margin-top: unset;
+    transform: translate(250px, 0);
+    display: inline-block;
   }
+}
 }
