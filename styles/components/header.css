@@ -1,6 +1,5 @@
  .header {
   position: fixed;
-  max-width: 1700px;
   width: 100%;
   z-index: 100;
 }
@@ -23,8 +22,8 @@
 .header-logo__img {
   & img{
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     -o-object-fit: contain;
     object-fit: contain;
   }

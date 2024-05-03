@@ -12,17 +12,27 @@
   & button {
     border: 1px solid rgba(0, 0, 0, 0.095);
     padding: 1rem;
-    background: linear-gradient(#fefefe, #fefefe 50%, #0e0e0e 50%, #0e0e0e);
+    background: linear-gradient(#fefefe, #fefefe 51%, #0e0e0e 50%, #0e0e0e);
     color: var(--text-dark);
     cursor: pointer;
     background-size: 100% 200%;
     transition: background 0.5s;
     font-family: "Shippori Mincho B1", serif;
     z-index: 100;
+    width: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   &:hover {
     color: var(--text-light);
     background-position: 100% -100%;
     }
+  & p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+  }
   }
 }
 

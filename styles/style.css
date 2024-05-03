@@ -12,9 +12,8 @@
 }
 
 body {
-  max-width: var(--max-width);
   margin: 0 auto;
-  background: #f5f5f5;
+  background: #efefef;
   color: #0f0f0f;
   font-family: var(--font-primary);
 }
