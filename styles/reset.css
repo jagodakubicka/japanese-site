@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background: var(--background-light);
+  color: var(--text-dark);
+  font-family: var(--font-primary);
+}
+
+
+img, svg, picture{
+  max-width: 100%;
+  
+}
+
+
+section:not(.hero, .nav) {
+  margin: 50px 0;
+  max-width: var(--max-width);
+}
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
