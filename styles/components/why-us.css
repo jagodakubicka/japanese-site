@@ -6,11 +6,12 @@ max-width: var(--max-width);
 .why-wrapper{
 margin: 0 auto;
 position: relative;
-display: flex;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+place-items: center;
+gap: 2rem;
 justify-content: center;
 align-items: center;
-flex-wrap: wrap;
-gap: 2rem;
 & img{
  position: absolute;
  top: 0;
@@ -24,9 +25,10 @@ gap: 2rem;
 }
 .why-card{
  position: relative;
- max-width: 500px;
+ max-width: 400px;
  padding: 2rem;
  backdrop-filter: blur(30px);
+ aspect-ratio: 2 / 1;
 }
 .why-background{
  position: absolute;
@@ -44,4 +46,20 @@ gap: 2rem;
 .why-number{
  font-size: 4rem;
  margin-bottom: 2rem;
+ & span{
+  font-size: 2rem;
+ }
+}
+
+@media (min-width: 768px){
+.why-wrapper{
+ padding: 5rem 0;
+ grid-template-columns: repeat(2, 380px);
+ gap: 4rem 1rem;
+ 
+}
+.why-wrapper > :nth-child(odd of .why-card){
+margin-top: -10rem;
+
+ }
 }
