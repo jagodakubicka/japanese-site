@@ -12,20 +12,27 @@ place-items: center;
 gap: 2rem;
 justify-content: center;
 align-items: center;
-& img{
- position: absolute;
- top: 0;
- bottom: 0;
- margin: auto;
- left: 0;
- right: 0;
- opacity: .4;
- scale: .6;
+ & img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  opacity: .4;
+  scale: .6;
+ }
 }
+.why-wrapper :nth-child(even of .why-card){
+ justify-self: flex-end;
+}
+.why-wrapper :nth-child(odd of .why-card){
+ justify-self: flex-start;
 }
 .why-card{
  position: relative;
  max-width: 400px;
+ width: 80%;
  padding: 2rem;
  backdrop-filter: blur(30px);
  aspect-ratio: 2 / 1;
@@ -58,8 +65,20 @@ align-items: center;
  gap: 4rem 1rem;
  
 }
+
+
 .why-wrapper > :nth-child(odd of .why-card){
 margin-top: -10rem;
 
  }
+
+ .why-wrapper :nth-child(even of .why-card){
+ justify-self: unset;
+}
+.why-wrapper :nth-child(odd of .why-card){
+ justify-self: unset;
+}
+.why-card{
+ width: 100%;
+}
 }
