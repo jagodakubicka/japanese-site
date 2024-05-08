@@ -6,11 +6,19 @@
 .clients-scroller__wrapper{
  padding-block: 1rem;
  display: flex;
+ justify-content: center;
+ align-items: center;
  flex-wrap: wrap;
  gap:1rem;
- & img{
-  max-width: 200px;
+ & li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   & img{
+  max-width: 150px;
   height: auto;
+ }
  }
 }
 
