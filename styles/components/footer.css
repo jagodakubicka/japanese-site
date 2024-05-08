@@ -1,7 +1,7 @@
 .footer{
- /* height: 200px; */
  margin-top: 200px;
  position: relative;
+ background-color: var(--primary);
 }
 .footer-circle{
  position: absolute;
@@ -14,25 +14,89 @@
  border-radius: 50%;
  background: var(--main-circle-gradient);
 }
-.footer__wrapper{
-  background-color: var(--primary);
+.footer-wrapper{
   width: 100%;
   min-height: 400px;
   height:max-content;
+  padding: 1rem;
   color: var(--text-light);
   z-index:0;
   position: relative;
-  backdrop-filter: blur(15px);
- & p{
-  position: relative;
-  z-index: 10;
- }
+  backdrop-filter: blur(25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-adress{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.footer-adress .links{
+  display: flex;
+  flex-direction: column;
+  & a{
+    text-decoration: none;
+    color: var(--text-light);
+  }
+}
+.footer-middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  & img{
+    max-width: 200px;
+    filter: brightness(100);
+    transform: scaleX(-1);
+  }
+  & p{
+    text-align: center;
+    font-size: 12px;
+  }
+    & a{
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--text-light);
+  }
+}
+.footer-media{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-media__link{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-light);
+  }
 }
 
 @media (min-width: 768px) {
+  .footer-wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+     & > div {
+    flex-basis: 33.33%;
+    min-height: 200px;
+    height: 100%; 
+  }
+  }
   .footer-circle {
-     width: 400px;
-     height: 400px;
+     width: 550px;
+     height: 550px;
      top: -40%;
   }
 }
