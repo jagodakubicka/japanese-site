@@ -1,0 +1,45 @@
+.clients-scroller{
+ max-width: 1000px;
+ margin: 0 auto;
+}
+
+.clients-scroller__wrapper{
+ padding-block: 1rem;
+ display: flex;
+ flex-wrap: wrap;
+ gap:1rem;
+ & img{
+  max-width: 200px;
+  height: auto;
+ }
+}
+
+.clients-scroller[data-animated="true"] {
+ overflow: hidden;
+ -webkit-mask: linear-gradient(
+  90deg,
+  transparent,
+  white 20%,
+  white 80%,
+  transparent
+ );
+ mask: linear-gradient(
+  90deg,
+  transparent,
+  white 20%,
+  white 80%,
+  transparent
+ );
+}
+
+.clients-scroller[data-animated="true"]
+.clients-scroller__wrapper {
+ width: max-content;
+ flex-wrap: nowrap;
+ animation: scroll 40s forwards linear infinite;
+}
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
