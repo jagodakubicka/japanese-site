@@ -33,9 +33,11 @@ form{
 }
 .contact-textarea{
  width: 100%;
+ display: flex;
+ justify-content: center;
 }
 input, textarea, .contact-btn{
- width: 100%;
+ width: 90%;
  border: none;
  padding: .5rem;
  border-radius: 5px;
@@ -43,8 +45,33 @@ input, textarea, .contact-btn{
 }
 
 .contact-btn{
- background:var(--text-light);
- cursor: pointer;
- width: fit-content;
- padding: .5rem 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.095);
+    padding: .5rem;
+    background: linear-gradient(#fefefe, #fefefe 51%, #0e0e0e 50%, #0e0e0e);
+    color: var(--text-dark);
+    cursor: pointer;
+    background-size: 100% 200%;
+    transition: background 0.5s;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    z-index: 100;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  &:hover {
+    color: var(--text-light);
+    background-position: 100% -100%;
+    }
+}
+
+
+@media (min-width: 768px){
+ .contact-basic-data{
+flex-direction: row;
+}
+form{
+ padding: 3rem;
+}
 }

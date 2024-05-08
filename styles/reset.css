@@ -51,3 +51,7 @@ section:not(.hero, .nav) {
     background: var(--main-circle-gradient);
   }
 }
+
+a, button{
+   font-family: var(--font-secondary);
+}
