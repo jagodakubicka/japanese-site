@@ -136,9 +136,9 @@
   transform: translateY(-100px);
 }
 
-.hero-main__images .hero-main__img {
+.hero-main__img {
   max-height: 600px;
-  margin-top: -160px;
+  margin-top: -20px;
 }
 .hero-main__img--kanji {
   position: absolute;
@@ -153,6 +153,7 @@
 .hero-main__img--geisha {
   position: relative;
   z-index: 6;
+  margin-left: 2rem;
 }
 .hero-main__overlap {
   background-color: var(--primary);
@@ -179,9 +180,7 @@
   margin: 0 auto;
   z-index: 0;
 }
-.hero-main__circle--blur {
-  backdrop-filter: blur(30px);
-}
+
 @media (min-width: 768px) {
   .hero-top {
     display: inline-block;
@@ -249,6 +248,9 @@
     max-height: unset;
     width: 500px;
     opacity: 0.6;
+  }
+  .hero-main__img--geisha {
+    margin-left: 0;
   }
 }
 
