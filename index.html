@@ -1,348 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="/styles/style.css">
- <script src="https://kit.fontawesome.com/7b2184abc5.js" crossorigin="anonymous"></script>
- <title>Japanese-site</title>
-</head>
-<body>
-<header class="header">
- <div class="header-container">
-  <div class="header-logo">
-   <picture class="header-logo__img">
-    <source srcset="/images/logo.png">
-    <img src="/images/logo.png" alt="company-name">
-   </picture>
-   <p>NAME</p>
-  </div>
-     
- <section class="nav">
-  
-   <div class="nav-menu">
-    <button id="nav-btn" role="button">
-    <span id="nav-btn-open" class="">
-      開
-    </span>
-    <span id="nav-btn-close" class="hide">
-      <i class="fa-solid fa-xmark"></i>
-    </span>
-   </button></div>
-   <nav class="nav-wrapper hide">
-    <div class="nav-container">
-      <ul>
-        <li>
-          <a href="">
-            <i class="icon fa-solid fa-arrow-right"></i>
-            Why us
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <i class="icon fa-solid fa-arrow-right"></i>
-            What we do
-          </a>
-        </li>
-        <li>
-          <a href="">
-             <i class="icon fa-solid fa-arrow-right"></i>
-            Clients
-          </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7b2184abc5.js"
+      crossorigin="anonymous"></script>
+    <title>Japanese-site</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="header-logo">
+          <picture class="header-logo__img">
+            <source srcset="/images/logo.png" />
+            <img src="/images/logo.png" alt="company-name" />
+          </picture>
+          <p>NAME</p>
+        </div>
+
+        <section class="nav">
+          <div class="nav-menu">
+            <button id="nav-btn" role="button">
+              <span id="nav-btn-open" class=""> 開 </span>
+              <span id="nav-btn-close" class="hide">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+            </button>
+          </div>
+          <nav class="nav-wrapper hide">
+            <div class="nav-container">
+              <ul>
+                <li>
+                  <a href="">
+                    <i class="icon fa-solid fa-arrow-right"></i>
+                    Why us
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="icon fa-solid fa-arrow-right"></i>
+                    What we do
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="icon fa-solid fa-arrow-right"></i>
+                    Clients
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="icon fa-solid fa-arrow-right"></i>
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="icon fa-solid fa-arrow-right"></i>
+                    Why us
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="icon fa-solid fa-arrow-right"></i>
+                    What we do
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="icon fa-solid fa-arrow-right"></i>
+                    Clients
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-top">
+          <p class="hero-top__text hero-top__text--hiragana">
+            こんにちは
+            <span class="hero-top__text hero-top__text--romaji"
+              >konnichiwa!</span
+            >
+          </p>
+        </div>
+        <a href="#why-us" class="hero-main__scroll">
+          <div class="hero-main__scrollBtn">
+            <span class="fa-solid fa-arrow-down-long"></span>
+          </div>
+          <p>see more</p>
+        </a>
+        <div class="hero-main">
+          <div class="hero-main__wrapper">
+            <div class="hero-main__content">
+              <h1>Awesome header text</h1>
+              <h2>Even more awesome desc</h2>
+            </div>
+            <div class="hero-main__images">
+              <picture>
+                <source srcset="./images/geisha-1.png" />
+                <img src="./images/geisha-1.png" alt="geisha" />
+              </picture>
+            </div>
+          </div>
+
+          <div class="hero-main__overlap">
+            <div class="hero-main__circle"></div>
+            <div class="hero-main__circle hero-main__circle--blur"></div>
+          </div>
+        </div>
+      </section>
+      <section id="why-us">
+        <div class="section-title">
+          <h2>Why us</h2>
+        </div>
+        <div class="why-wrapper">
+          <img src="./images/brush-stroke.png" alt="brush-stroke" />
+          <div class="why-card">
+            <div class="why-background"></div>
+            <div class="why-number">
+              <p>43</p>
+            </div>
+            <div class="why-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam, iste.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-card">
+            <div class="why-background"></div>
+            <div class="why-number">
+              <p>94<span>%</span></p>
+            </div>
+            <div class="why-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam, iste.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-card">
+            <div class="why-background"></div>
+            <div class="why-number">
+              <p>92</p>
+            </div>
+            <div class="why-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam, iste.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-card">
+            <div class="why-background"></div>
+            <div class="why-number">
+              <p><span>~</span>100<span>%</span></p>
+            </div>
+            <div class="why-desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam, iste.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="what-we-do">
+        <div class="section-title">
+          <h2>What we do</h2>
+        </div>
+        <div class="what-we-do__wrapper">
+          <div class="what-we-do__card">
+            <div class="what-we-do__bg"></div>
+            <p class="what-we-do__number">01</p>
+            <p class="what-we-do__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repudiandae sequi quisquam quae. Deserunt, libero voluptatum?
+            </p>
+          </div>
+
+          <div class="what-we-do__card">
+            <div class="what-we-do__bg"></div>
+            <p class="what-we-do__number">02</p>
+            <p class="what-we-do__desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Obcaecati, vitae?
+            </p>
+          </div>
+
+          <div class="what-we-do__card">
+            <div class="what-we-do__bg"></div>
+            <p class="what-we-do__number">03</p>
+            <p class="what-we-do__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              cupiditate nisi dicta sequi, expedita magni.
+            </p>
+          </div>
+
+          <div class="what-we-do__card">
+            <div class="what-we-do__bg"></div>
+            <p class="what-we-do__number">04</p>
+            <p class="what-we-do__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+              autem.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="clients">
+        <div class="section-title">
+          <h2>Our Clients</h2>
+        </div>
+        <div class="clients-scroller" data-direction="right" data-speed="slow">
+          <ul class="clients-scroller__wrapper">
+            <li>
+              <img src="./images/clients/client-1.png" alt="client logo name" />
+            </li>
+            <li>
+              <img src="./images/clients/client-2.png" alt="client logo name" />
+            </li>
+            <li>
+              <img src="./images/clients/client-3.png" alt="client logo name" />
+            </li>
+            <li>
+              <img src="./images/clients/client-1.png" alt="client logo name" />
+            </li>
+            <li>
+              <img src="./images/clients/client-2.png" alt="client logo name" />
+            </li>
+            <li>
+              <img src="./images/clients/client-3.png" alt="client logo name" />
+            </li>
+            <li>
+              <img src="./images/clients/client-1.png" alt="client logo name" />
+            </li>
+            <li>
+              <img src="./images/clients/client-2.png" alt="client logo name" />
+            </li>
+            <li>
+              <img src="./images/clients/client-3.png" alt="client logo name" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="section-title">
+          <h2>Our Team</h2>
+        </div>
+        <ul class="team-wrapper">
+          <li class="big">
+            <img
+              loading="lazy"
+              src="https://images.pexels.com/photos/1756665/pexels-photo-1756665.jpeg/"
+              alt="" />
           </li>
-        <li>
-          <a href="">
-            <i class="icon fa-solid fa-arrow-right"></i>
-            Contact
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <i class="icon fa-solid fa-arrow-right"></i>
-            Why us
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <i class="icon fa-solid fa-arrow-right"></i>
-            What we do
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <i class="icon fa-solid fa-arrow-right"></i>
-            Clients
-          </a>
-        </li>        
-      </ul>
-    </div>
-   </nav>
- </section>
- </div>
-</header>
-<main>
- <section class="hero">
-  <div class="hero-top">
-    <p class="hero-top__text hero-top__text--hiragana">こんにちは 
-      <span class="hero-top__text hero-top__text--romaji">konnichiwa!</span>
-    </p>
-  </div>
-  <a href="#why-us" class="hero-main__scroll">
-    <div class="hero-main__scrollBtn">
-      <span class="fa-solid fa-arrow-down-long"></span>
-    </div>
-    <p>see more</p>
-  </a>
-  <div class="hero-main">
-    <div class="hero-main__wrapper">
-      <div class="hero-main__content">
-        <h1>Awesome header text</h1>
-        <h2>Even more awesome desc 
-        </h2>
+          <li class="tall">
+            <img
+              loading="lazy"
+              src="https://images.pexels.com/photos/3228812/pexels-photo-3228812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+          </li>
+          <li class="">
+            <img
+              loading="lazy"
+              src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+          </li>
+
+          <li class="big">
+            <img
+              loading="lazy"
+              src="https://images.pexels.com/photos/1627935/pexels-photo-1627935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+          </li>
+          <li class="tall">
+            <img
+              loading="lazy"
+              src="https://images.pexels.com/photos/5029923/pexels-photo-5029923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+          </li>
+          <li class="wide">
+            <img
+              loading="lazy"
+              src="https://images.pexels.com/photos/2467506/pexels-photo-2467506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="section-title">
+          <h2>Get in Touch</h2>
+        </div>
+        <form method="post">
+          <div class="contact-bg"></div>
+          <div class="contact-basic-data">
+            <div class="contact-input">
+              <label for="name">Name <span>(名前)</span> </label>
+              <input id="name" type="text" required />
+            </div>
+
+            <div class="contact-input">
+              <label for="surname">Surname <span>(苗字)</span></label>
+              <input id="surname" type="text" required />
+            </div>
+          </div>
+          <div class="contact-input">
+            <label for="email">Email <span>(メール)</span></label>
+            <input id="email" type="email" required />
+          </div>
+          <div class="contact-textarea">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              maxlength="500"></textarea>
+          </div>
+          <button class="contact-btn" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-circle"></div>
+      <div class="footer-wrapper">
+        <div class="footer-adress">
+          <p>Warsaw</p>
+          <div class="links">
+            <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a>
+            <a href="tel:+XX 123 456 789">+XX 123 456 789</a>
+          </div>
+        </div>
+        <div class="footer-middle">
+          <img src="./images/crane.png" alt="" />
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-media">
+          <p>Social Media</p>
+          <ul class="footer-media__link">
+            <li>
+              <i class="icon fa-solid fa-arrow-right"></i>
+              <a aria-label="facebook link" href="#"> FB </a>
+            </li>
+            <li>
+              <i class="icon fa-solid fa-arrow-right"></i>
+              <a aria-label="youtube link" href="#"> YT </a>
+            </li>
+            <li>
+              <i class="icon fa-solid fa-arrow-right"></i>
+              <a aria-label="instagram link" href="#"> IN </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="hero-main__images">
-        <picture>
-          <source srcset="./images/geisha.webp" >
-          <img src="./images/geisha.webp" alt="geisha">
+      <div class="footer-logo">
+        <picture class="footer-logo__img">
+          <source srcset="/images/logo-cut.png" />
+          <img src="/images/logo-cut.png" alt="company-name" />
         </picture>
+        <p>NAME</p>
       </div>
-    </div>
-    
-    
-   <div class="hero-main__overlap">
-      <div class="hero-main__circle"></div>
-      <div class="hero-main__circle hero-main__circle--blur"></div>
-   </div>
-
-   
-  </div>
- </section>
- <section id="why-us">
-  <div class="section-title">
-    <h2>Why us</h2>
-  </div>
- <div class="why-wrapper">
-  <img src="./images/brush-stroke.png" alt="brush-stroke">
-  <div class="why-card">
-    <div class="why-background"></div>
-    <div class="why-number">
-      <p>43</p>
-    </div>
-    <div class="why-desc">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, iste.</p>
-    </div>
-  </div>
-
-  <div class="why-card">
-    <div class="why-background"></div>
-    <div class="why-number">
-      <p>94<span>%</span></p>
-    </div>
-    <div class="why-desc">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, iste.</p>
-    </div>
-  </div>
-
-  <div class="why-card">
-    <div class="why-background"></div>
-    <div class="why-number">
-      <p>92</p>
-    </div>
-    <div class="why-desc">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, iste.</p>
-    </div>
-  </div>
-
-  <div class="why-card">
-    <div class="why-background"></div>
-    <div class="why-number">
-    <p><span>~</span>100<span>%</span></p>
-    </div>
-    <div class="why-desc">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, iste.</p>
-    </div>
-  </div>
- </div>
- </section>
-
- <section id="what-we-do">
-  <div class="section-title">
-    <h2>What we do</h2>
-  </div>
-  <div class="what-we-do__wrapper">
-    <div class="what-we-do__card">
-      <div class="what-we-do__bg"></div>
-      <p class="what-we-do__number">01</p>
-      <p class="what-we-do__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae sequi quisquam quae. Deserunt, libero voluptatum?</p>
-    </div>
-
-    <div class="what-we-do__card">
-      <div class="what-we-do__bg"></div>
-       <p class="what-we-do__number">02</p>
-      <p class="what-we-do__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, vitae?</p>
-    </div>
-
-    <div class="what-we-do__card">
-      <div class="what-we-do__bg"></div>
-       <p class="what-we-do__number">03</p>
-      <p class="what-we-do__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate nisi dicta sequi, expedita magni.</p>
-    </div>
-
-    <div class="what-we-do__card">
-      <div class="what-we-do__bg"></div>
-       <p class="what-we-do__number">04</p>
-      <p class="what-we-do__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, autem.</p>
-    </div>
-  </div>
- </section>
-
- <section id="clients">
-  <div class="section-title">
-    <h2>Our Clients</h2>
-  </div>
-  <div class="clients-scroller" data-direction="right" data-speed="slow">
-    <ul class="clients-scroller__wrapper">
-      <li>
-        <img src="./images/clients/client-1.png" alt="client logo name">
-      </li>
-      <li>
-        <img src="./images/clients/client-2.png" alt="client logo name">
-      </li>
-      <li>
-        <img src="./images/clients/client-3.png" alt="client logo name">
-      </li>
-        <li>
-        <img src="./images/clients/client-1.png" alt="client logo name">
-      </li>
-      <li>
-        <img src="./images/clients/client-2.png" alt="client logo name">
-      </li>
-      <li>
-        <img src="./images/clients/client-3.png" alt="client logo name">
-      </li>
-        <li>
-        <img src="./images/clients/client-1.png" alt="client logo name">
-      </li>
-      <li>
-        <img src="./images/clients/client-2.png" alt="client logo name">
-      </li>
-      <li>
-        <img src="./images/clients/client-3.png" alt="client logo name">
-      </li>
-    </ul>
-  </div>
- </section>
-
-  <section id="team">
-  <div class="section-title">
-    <h2>Our Team</h2>
-  </div>
-  <ul class="team-wrapper">
-    <li class="big">
-      <img loading="lazy" src="https://images.pexels.com/photos/1756665/pexels-photo-1756665.jpeg/" alt="">
-    </li>
-    <li class="tall">
-      <img loading="lazy" src="https://images.pexels.com/photos/3228812/pexels-photo-3228812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    </li>
-    <li class="">
-      <img loading="lazy" src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    </li>
-    <li>
-      <img loading="lazy" src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    </li>
-
-    <li class="big">
-      <img loading="lazy" src="https://images.pexels.com/photos/1627935/pexels-photo-1627935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    </li>
-    <li class="tall">
-      <img loading="lazy" src="https://images.pexels.com/photos/5029923/pexels-photo-5029923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    </li>
-    <li class="wide">
-      <img loading="lazy" src="https://images.pexels.com/photos/2467506/pexels-photo-2467506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    </li>
-    <li>
-      <img loading="lazy" src="https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    </li>
-     <li>
-      <img loading="lazy" src="https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    </li>
-  </ul>
- </section>
-
-  <section class="contact" id="contact">
-  <div class="section-title">
-    <h2>Get in Touch</h2>
-  </div>
-  <form method="post">
-    <div class="contact-bg"></div>
-    <div class="contact-basic-data">
-      <label for="name">Name</label>
-      <input id="name" type="text" required>
-
-      <label for="surname">Surname</label>
-      <input id="surname" type="text" required>
-    </div>
-      <label for="email">Email</label>
-      <input id="email" type="email" required>
-    <div class="contact-textarea">
-      <textarea name="message" id="message" cols="30" rows="10" maxlength="500"></textarea>
-    </div>
-    <button class="contact-btn" type="submit">Send</button>
-  </form>
- </section>
-
-</main>
-<footer class="footer">
-  <div class="footer-circle"></div>
-  <div class="footer-wrapper">
-    <div class="footer-adress">
-      <p>Warsaw</p>
-      <div class="links">
-        <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a>
-        <a href="tel:+XX 123 456 789">+XX 123 456 789</a>
-      </div>
-    </div>
-    <div class="footer-middle">
-      <img src="./images/crane.png" alt="">
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <a href="#">Privacy Policy</a>
-      </div>
-    </div>
-    <div class="footer-media">
-      <p>Social Media</p>
-      <ul class="footer-media__link">
-        <li>
-          <i class="icon fa-solid fa-arrow-right"></i>
-          <a aria-label="facebook link" href="#">
-            
-            FB
-          </a>
-        </li>
-        <li>
-          <i class="icon fa-solid fa-arrow-right"></i>
-          <a aria-label="youtube link" href="#">
-            YT
-          </a>
-        </li>
-        <li>
-          <i class="icon fa-solid fa-arrow-right"></i>
-          <a aria-label="instagram link" href="#">
-            IN
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-  <div class="footer-logo">
-    <picture class="footer-logo__img">
-    <source srcset="/images/logo-cut.png">
-    <img src="/images/logo-cut.png" alt="company-name">
-   </picture>
-   <p>NAME</p>
-  </div>
-</footer>
-<script src="scripts/main.js"></script>
-</body>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/form.js"></script>
+  </body>
 </html>

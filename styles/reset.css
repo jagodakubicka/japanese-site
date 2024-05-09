@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -15,12 +15,11 @@ body {
   font-family: var(--font-primary);
 }
 
-
-img, svg, picture{
+img,
+svg,
+picture {
   max-width: 100%;
-  
 }
-
 
 section:not(.hero, .nav) {
   margin: 50px auto;
@@ -33,16 +32,16 @@ section:not(.hero, .nav) {
   -webkit-font-smoothing: antialiased;
 }
 
-.section-title{
+.section-title {
   text-align: center;
   font-style: italic;
   position: relative;
   margin: 50px 0;
-  & :before{
+  & :before {
     content: '';
     position: absolute;
-    top:-55%;
-    left:0;
+    top: -55%;
+    left: 0;
     right: 0;
     margin: 0 auto;
     width: 15px;
@@ -52,6 +51,7 @@ section:not(.hero, .nav) {
   }
 }
 
-a, button{
-   font-family: var(--font-secondary);
+a,
+button {
+  font-family: var(--font-secondary);
 }

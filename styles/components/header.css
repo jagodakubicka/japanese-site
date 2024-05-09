@@ -1,4 +1,4 @@
- .header {
+.header {
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -15,12 +15,12 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  & p{
+  & p {
     color: var(--text-light);
   }
 }
 .header-logo__img {
-  & img{
+  & img {
     display: block;
     width: 60px;
     height: 60px;
@@ -29,10 +29,9 @@
   }
 }
 
-
-@media (min-width:768px) {
-  .header-logo{
-    & p{
+@media (min-width: 768px) {
+  .header-logo {
+    & p {
       color: var(--text-dark);
     }
   }
