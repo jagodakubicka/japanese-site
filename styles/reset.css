@@ -9,10 +9,10 @@ html {
 
 body {
   margin: 0 auto;
-  /* max-width: 1700px; */
   background: var(--background-light);
   color: var(--text-dark);
   font-family: var(--font-primary);
+  overflow-x: hidden;
 }
 
 img,

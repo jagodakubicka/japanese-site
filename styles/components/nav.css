@@ -19,8 +19,8 @@
     transition: background 0.5s;
     font-family: 'Shippori Mincho B1', serif;
     z-index: 100;
-    width: 40px;
-    height: 60px;
+    width: 60px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +38,7 @@
 
 .nav-container {
   width: 100vw;
+  padding: 2rem 0;
   background-color: rgba(250, 250, 250, 0.97);
   height: 100vh;
   position: absolute;
@@ -45,50 +46,51 @@
   right: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   transform-origin: top right;
   backdrop-filter: blur(10px);
-  & ul {
+}
+
+.nav-container__links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  & li {
+    padding: 0.5rem;
+    list-style: none;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 2rem;
-    & li {
-      padding: 0.5rem;
-      list-style: none;
-      width: 100%;
-      transition: all 0.2s linear;
-      position: relative;
-      &:before {
-        content: '';
-        width: 60%;
-        height: 1px;
-        background-color: rgba(0, 0, 0, 0.2);
-        opacity: 0.5;
-        position: absolute;
-        top: 0;
-        display: none;
-        animation: border_anim 0.3s linear forwards;
-      }
-      &:after {
-        content: '';
-        width: 60%;
-        height: 1px;
-        background-color: rgba(0, 0, 0, 0.2);
-        opacity: 0.5;
-        position: absolute;
-        bottom: 0;
-        display: none;
-        animation: border_anim 0.3s linear forwards;
-      }
+    transition: all 0.2s linear;
+    position: relative;
+    &:before {
+      content: '';
+      width: 60%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.2);
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      display: none;
+      animation: border_anim 0.3s linear forwards;
+    }
+    &:after {
+      content: '';
+      width: 60%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.2);
+      opacity: 0.5;
+      position: absolute;
+      bottom: 0;
+      display: none;
+      animation: border_anim 0.3s linear forwards;
     }
   }
 }
 
-.nav-container ul li:hover {
+.nav-container__links li:hover {
   &:before {
     display: block;
   }
@@ -96,13 +98,13 @@
     display: block;
   }
 }
-.nav-container ul li:hover a {
+.nav-container__links li:hover a {
   transform: translateX(15px);
   & .icon {
     display: inline-block;
   }
 }
-.nav-container ul li a {
+.nav-container__links li a {
   display: inline-block;
   font-family: 'Shippori Mincho B1', serif;
   font-size: 1rem;
@@ -122,6 +124,94 @@
 
 .hide {
   display: none;
+}
+
+.nav-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-media__link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  & li {
+    list-style: none;
+    position: relative;
+    &:before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 1);
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      animation: border_anim 0.2s linear forwards;
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 1);
+      opacity: 0.5;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: none;
+      animation: border_anim 0.2s linear forwards;
+    }
+  }
+  & a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0.6rem;
+    transition: all 0.2s ease-in-out;
+  }
+  & i {
+    transform: rotate(-30deg);
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+.nav-media__link li:hover {
+  &:before {
+    display: block;
+  }
+  &:after {
+    display: block;
+  }
+  & a {
+    transform: translateY(10px);
+  }
+  & i {
+    display: block;
+  }
+}
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.nav-logo__img {
+  max-width: 40px;
+  filter: grayscale(100);
 }
 
 @media (min-width: 768px) {

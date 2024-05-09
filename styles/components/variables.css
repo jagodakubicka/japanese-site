@@ -26,8 +26,8 @@
   --main-circle-gradient: linear-gradient(
     to top,
     transparent,
-    rgba(200, 72, 33, 0.43) 57.2%,
-    rgb(234, 32, 70)
+    rgba(130, 30, 30, 0.43) 57.2%,
+    rgb(248, 109, 135)
   );
   z-index: -2;
 
@@ -36,4 +36,7 @@
   --font-secondary: 'Zen Kaku Gothic New', sans-serif;
 
   /* fonts sizes */
+
+  /* bg img */
+  --paper-bg-img: url(/images/washi.png);
 }

@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/7b2184abc5.js"
       crossorigin="anonymous"></script>
     <title>Japanese-site</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
   </head>
   <body>
     <header class="header">
@@ -31,7 +32,7 @@
           </div>
           <nav class="nav-wrapper hide">
             <div class="nav-container">
-              <ul>
+              <ul class="nav-container__links">
                 <li>
                   <a href="">
                     <i class="icon fa-solid fa-arrow-right"></i>
@@ -56,25 +57,35 @@
                     Contact
                   </a>
                 </li>
-                <li>
-                  <a href="">
-                    <i class="icon fa-solid fa-arrow-right"></i>
-                    Why us
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="icon fa-solid fa-arrow-right"></i>
-                    What we do
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="icon fa-solid fa-arrow-right"></i>
-                    Clients
-                  </a>
-                </li>
               </ul>
+              <div class="nav-media">
+                <p>Social Media</p>
+                <ul class="nav-media__link">
+                  <li>
+                    <i class="icon fa-solid fa-arrow-right"></i>
+                    <a aria-label="facebook link" href="#"> FB </a>
+                  </li>
+                  <li>
+                    <i class="icon fa-solid fa-arrow-right"></i>
+                    <a aria-label="youtube link" href="#"> YT </a>
+                  </li>
+                  <li>
+                    <i class="icon fa-solid fa-arrow-right"></i>
+                    <a aria-label="instagram link" href="#"> IN </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="nav-logo">
+                <div class="">2024 Name sp.zoo</div>
+                <div class="nav-logo__image">
+                  <img
+                    class="nav-logo__img"
+                    src="/images/logo-cut.png"
+                    alt="company-name" />
+                  <span>NAME</span>
+                </div>
+              </div>
             </div>
           </nav>
         </section>
@@ -100,10 +111,17 @@
           <div class="hero-main__wrapper">
             <div class="hero-main__content">
               <h1>Awesome header text</h1>
-              <h2>Even more awesome desc</h2>
+              <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis excepturi porro nam iure temporibus!
+              </h2>
             </div>
             <div class="hero-main__images">
-              <picture>
+              <img
+                class="hero-main__img hero-main__img--kanji"
+                src="./images/kanji-spirit.png"
+                alt="" />
+              <picture class="hero-main__img hero-main__img--geisha">
                 <source srcset="./images/geisha-1.png" />
                 <img src="./images/geisha-1.png" alt="geisha" />
               </picture>

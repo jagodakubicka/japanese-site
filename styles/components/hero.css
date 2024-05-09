@@ -1,5 +1,5 @@
 .hero {
-  height: clamp(70rem, 100dvh, 108rem);
+  height: fit-content;
   width: 100%;
   /* height: 100%; */
   z-index: 0;
@@ -10,14 +10,13 @@
 }
 .hero-main {
   position: relative;
-  height: clamp(70rem, 100dvh, 108rem);
-  max-height: 900px;
+  /* height: 100dvh; */
   width: 100%;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/paper-bg.webp);
+  background-image: var(--paper-bg-img);
   background-repeat: no-repeat;
   background-size: cover;
   &::before {
@@ -89,8 +88,8 @@
   transition: background 0.5s;
   font-family: 'Shippori Mincho B1', serif;
   z-index: 100;
-  width: 40px;
-  height: 60px;
+  width: 60px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,10 +133,26 @@
   position: relative;
   z-index: 5;
   height: fit-content;
-  & img {
-    max-height: 600px;
-    margin-top: -160px;
-  }
+  transform: translateY(-100px);
+}
+
+.hero-main__images .hero-main__img {
+  max-height: 600px;
+  margin-top: -160px;
+}
+.hero-main__img--kanji {
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+  transform: translateX(-50%);
+  z-index: 5;
+  max-height: unset;
+  height: 500px;
+  opacity: 0.6;
+}
+.hero-main__img--geisha {
+  position: relative;
+  z-index: 6;
 }
 .hero-main__overlap {
   background-color: var(--primary);
@@ -152,8 +167,8 @@
   background: rgb(194, 10, 10);
   background: linear-gradient(
     111deg,
-    rgba(194, 10, 10, 1) 0%,
-    rgba(250, 47, 167, 1) 100%
+    rgba(130, 30, 30, 1) 0%,
+    rgba(248, 109, 135, 1) 100%
   );
   border-radius: 50%;
   margin: 0 auto;
@@ -180,16 +195,30 @@
   }
   .hero-main {
     flex-direction: row;
+    /* max-width: 1700px; */
   }
   .hero-main__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    width: 75%;
-    height: clamp(70rem, 100dvh, 108rem);
+    width: unset;
+    flex: 2 1 auto;
+    height: 100dvh;
   }
+  .hero-main__content {
+    max-width: 500px;
+    width: 50%;
+  }
+  .hero-main__images {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(0);
+  }
+
   .hero-main__overlap {
-    width: 25%;
-    height: clamp(70rem, 100dvh, 108rem);
+    width: unset;
+    flex: 1 1 auto;
+    height: 100dvh;
     /* min-height:100vh; */
   }
   .hero-main__scroll {
@@ -200,35 +229,44 @@
   .hero-main__circle {
     width: 400px;
     height: 400px;
-    margin-left: -200px;
-    top: 20%;
-    right: 5%;
-    left: unset;
+    margin-left: -150px;
+    top: 0%;
+    right: -50%;
+    transform: translateY(50%);
   }
-  .hero-main__images {
-    & img {
-      max-height: 1000px;
-      margin-top: unset;
-      transform: translate(100px, 100px);
-      display: inline-block;
-    }
+  .hero-main__images .hero-main__img {
+    max-height: 1000px;
+    margin-top: unset;
+    transform: translate(100px, 100px);
+    display: inline-block;
+  }
+  .hero-main__img--kanji {
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    max-height: unset;
+    width: 500px;
+    opacity: 0.6;
   }
 }
 
 @media (min-width: 1200px) {
+  /* .hero{max-height: 100px;} */
   .hero-main__circle {
     width: 500px;
     height: 500px;
-    margin-left: -200px;
-    top: 20%;
-    right: 60%;
-    left: unset;
+    /* margin-left: -150px; */
+    top: -10%;
+    left: -50%;
+    transform: translateY(50%);
   }
 }
 
 @keyframes arrow {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-300%);
     transform-origin: bottom;
   }
   50% {
@@ -236,7 +274,7 @@
     transform-origin: top;
   }
   100% {
-    transform: translateY(200%);
+    transform: translateY(300%);
     transform-origin: top;
   }
 }

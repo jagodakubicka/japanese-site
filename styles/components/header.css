@@ -17,6 +17,10 @@
   gap: 0.5rem;
   & p {
     color: var(--text-light);
+    font-family: var(--font-secondary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
   }
 }
 .header-logo__img {
