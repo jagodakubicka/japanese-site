@@ -1,3 +1,15 @@
+.contact {
+  position: relative;
+}
+.contact-img {
+  display: none;
+  position: absolute;
+  max-width: 300px;
+  opacity: 0.6;
+  left: -25%;
+  z-index: -1;
+}
+
 .contact-basic-data {
   display: flex;
   flex-direction: column;
@@ -27,7 +39,7 @@ form {
   background-image: var(--paper-bg-img);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.4;
   z-index: -1;
 }
 .contact-textarea {
@@ -89,5 +101,8 @@ textarea,
   }
   form {
     padding: 3rem;
+  }
+  .contact-img {
+    display: inline-block;
   }
 }

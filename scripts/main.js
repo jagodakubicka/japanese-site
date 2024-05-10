@@ -14,9 +14,11 @@ toggleNavbarBtn.addEventListener('click', toggleNavigationMenu);
 
 const scroller = document.querySelector('.clients-scroller');
 
-if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  addCarouselAnimation();
-}
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    addCarouselAnimation();
+  }
+});
 
 function addCarouselAnimation() {
   scroller.setAttribute('data-animated', true);
