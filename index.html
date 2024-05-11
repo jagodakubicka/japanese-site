@@ -110,7 +110,7 @@
         <div class="hero-main">
           <div class="hero-main__wrapper">
             <div class="hero-main__content-wrapper">
-              <div class="hero-main__content">
+              <div class="hero-main__content hero-main__content--desktop">
                 <h1>Awesome header text</h1>
                 <h2>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -140,6 +140,15 @@
           <div class="hero-main__overlap"></div>
         </div>
       </section>
+      <section>
+        <div class="hero-main__content hero-main__content--mobile">
+          <h1>Awesome header text</h1>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis excepturi porro nam iure temporibus!
+          </h2>
+        </div>
+      </section>
       <section id="why-us">
         <div class="section-title">
           <h2>Why us</h2>
@@ -149,7 +158,7 @@
           <div class="why-card">
             <div class="why-background"></div>
             <div class="why-number">
-              <p>43</p>
+              <p class="animated-number" data-value="43">0</p>
             </div>
             <div class="why-desc">
               <p>
@@ -162,7 +171,8 @@
           <div class="why-card">
             <div class="why-background"></div>
             <div class="why-number">
-              <p>94<span>%</span></p>
+              <p class="animated-number" data-value="94">0</p>
+              <span>%</span>
             </div>
             <div class="why-desc">
               <p>
@@ -175,7 +185,7 @@
           <div class="why-card">
             <div class="why-background"></div>
             <div class="why-number">
-              <p>92</p>
+              <p class="animated-number" data-value="92">0</p>
             </div>
             <div class="why-desc">
               <p>
@@ -188,7 +198,9 @@
           <div class="why-card">
             <div class="why-background"></div>
             <div class="why-number">
-              <p><span>~</span>100<span>%</span></p>
+              <span>~</span>
+              <p class="animated-number" data-value="100">0</p>
+              <span>%</span>
             </div>
             <div class="why-desc">
               <p>
@@ -438,6 +450,7 @@
       </div>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/counters.js"></script>
     <script src="scripts/form.js"></script>
   </body>
 </html>

@@ -52,6 +52,9 @@
 .why-number {
   font-size: 4rem;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   & span {
     font-size: 2rem;
   }
