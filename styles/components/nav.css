@@ -213,6 +213,13 @@
   max-width: 40px;
   filter: grayscale(100);
 }
+.nav-container {
+  /* transform-origin: 50% 100%; */
+  animation: slide-in 500ms forwards;
+}
+nav:has(.hide) .nav-container {
+  animation: slide-out 500ms forwards;
+}
 
 @media (min-width: 768px) {
   .nav-container {
@@ -226,5 +233,22 @@
   }
   100% {
     width: 60%;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-out {
+  100% {
+    transform: scaleX(0);
+  }
+  0% {
+    transform: scaleX(1);
   }
 }

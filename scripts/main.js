@@ -8,6 +8,9 @@ const toggleNavigationMenu = () => {
   navWrapper.classList.toggle('hide');
   toggleNavbarBtnTextOpen.classList.toggle('hide');
   toggleNavbarBtnTextClose.classList.toggle('hide');
+
+  const isHidden = navWrapper.classList.contains('hide');
+  console.log('nav hidden?', isHidden);
 };
 
 toggleNavbarBtn.addEventListener('click', toggleNavigationMenu);
