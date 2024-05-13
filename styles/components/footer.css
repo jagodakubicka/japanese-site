@@ -12,7 +12,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: var(--main-circle-gradient);
+  /* background: var(--main-circle-gradient); */
 }
 .footer-wrapper {
   width: 100%;
@@ -167,8 +167,8 @@
     }
   }
   .footer-circle {
-    width: 550px;
-    height: 550px;
+    width: 400px;
+    height: 400px;
     top: -50%;
     margin-top: 100px;
   }
