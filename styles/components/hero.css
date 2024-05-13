@@ -223,7 +223,10 @@
 }
 @media (min-width: 768px) {
   .hero-top {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     width: 100%;
     margin: 0 auto;
     text-align: center;
