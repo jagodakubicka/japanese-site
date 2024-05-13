@@ -12,8 +12,20 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  /* background: var(--main-circle-gradient); */
+  &::after {
+    position: absolute;
+    border-radius: 50%;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      6deg,
+      rgba(161, 24, 24, 0.5) 50%,
+      rgba(252, 176, 69, 0.2) 100%
+    );
+  }
 }
+
 .footer-wrapper {
   width: 100%;
   min-height: 400px;
