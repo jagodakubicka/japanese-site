@@ -15,22 +15,21 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  overflow-x: hidden;
 }
 .header-company-name {
   color: var(--text-light);
   font-family: var(--font-secondary);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   letter-spacing: 2px;
-  transform: translateX(-100%);
   z-index: -1;
-  animation: reveal-text 1s forwards;
 }
 .header-logo__img {
   & img {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     -o-object-fit: contain;
     object-fit: contain;
   }
@@ -39,18 +38,5 @@
 @media (min-width: 768px) {
   .header-company-name {
     color: var(--text-dark);
-  }
-}
-
-@keyframes reveal-text {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0);
   }
 }

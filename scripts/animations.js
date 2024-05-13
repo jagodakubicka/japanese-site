@@ -1,10 +1,16 @@
 const footer = document.querySelector('.footer');
 const cards = document.querySelector('#what-we-do');
+const header = document.querySelector('header');
 
+const HeaderNameAnimation = anime({
+  targets: '.header-company-name',
+  translateX: -65,
+  autoplay: false,
+});
 const heroBgCircleAnimation = anime({
   targets: '.hero-main__overlap-circle--second',
   translateX: function () {
-    return anime.random(-200, 200);
+    return anime.random(-50, 400);
   },
   translateY: function () {
     return anime.random(-200, 200);
@@ -18,7 +24,7 @@ const heroBgCircleAnimation = anime({
 const heroBgTopCircleAnimation = anime({
   targets: '.hero-main__overlap-circle--first',
   translateX: function () {
-    return anime.random(-200, 200);
+    return anime.random(0, 200);
   },
   translateY: function () {
     return anime.random(-100, 100);
@@ -56,5 +62,8 @@ window.onscroll = function () {
   );
   origamiCardAnimation.seek(
     animateElement(cards, 1000) * origamiCardAnimation.duration
+  );
+  HeaderNameAnimation.seek(
+    animateElement(header, 4000, 0) * HeaderNameAnimation.duration
   );
 };
