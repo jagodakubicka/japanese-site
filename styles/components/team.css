@@ -23,12 +23,24 @@
 }
 
 .team-wrapper .wide {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 .team-wrapper .tall {
-  grid-row: span 2;
+  grid-row: span 1;
 }
 .grid-wrapper .big {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+@media (min-width: 768px) {
+  .team-wrapper .wide {
+    grid-column: span 2;
+  }
+  .team-wrapper .tall {
+    grid-row: span 2;
+  }
+  .grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
 }
