@@ -1,3 +1,4 @@
+const whyUsSection = document.querySelector('#why-us');
 const numbers = document.querySelectorAll('.animated-number');
 let interval = 2000;
 
@@ -18,4 +19,10 @@ const numCount = () => {
   });
 };
 
-numCount();
+window.addEventListener(
+  'scroll',
+  function () {
+    if (window.innerHeight > 100) numCount();
+  },
+  { once: true }
+);

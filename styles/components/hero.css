@@ -243,7 +243,13 @@
     /* display: flex;
     justify-content: center; */
   }
-
+  .hero-top__text {
+    font-weight: 600;
+  }
+  .hero-top__text--romaji {
+    font-family: var(--font-secondary);
+    text-transform: capitalize;
+  }
   .hero-main__content-wrapper {
     flex-direction: row;
     align-items: flex-end;
