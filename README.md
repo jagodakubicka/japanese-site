@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a personal exploration of design animations and layouts inspired by the style of the website [sarigato.com](https://www.sarigato.com/){:target="\_blank"}. While the project draws inspiration from sarigato.com, it is not an exact copy. Instead, the focus is on understanding and implementing certain design features and animations found on the website.
+This project is a personal exploration of design animations and layouts inspired by the style of the website [sarigato.com](https://www.sarigato.com/). While the project draws inspiration from sarigato.com, it is not an exact copy. Instead, the focus is on understanding and implementing certain design features and animations found on the website.
 
 ## Technologies Used
 
