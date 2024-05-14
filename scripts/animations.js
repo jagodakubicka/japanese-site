@@ -1,6 +1,10 @@
 const footer = document.querySelector('.footer');
+const whySection = document.querySelector('#why-us');
 const cards = document.querySelector('#what-we-do');
 const header = document.querySelector('header');
+
+const whatCardsWrapper = document.querySelector('.what-we-do__wrapper');
+const whatCards = document.querySelectorAll('.what-we-do__card--animated');
 
 const HeaderNameAnimation = anime({
   targets: '.header-company-name',
@@ -35,6 +39,14 @@ const heroBgTopCircleAnimation = anime({
   loop: true,
 });
 
+const whyCardAnimation = anime({
+  targets: '.why-card',
+  translateY: -50,
+  autoplay: false,
+  delay: anime.stagger(1000, { easing: 'easeOutQuad' }),
+  easing: 'easeInOutQuad',
+});
+
 const footerCircleAnimation = anime({
   targets: '.footer-circle',
   backgroundColor: ['rgb(250, 197, 92)', 'rgb(248, 109, 135)'],
@@ -44,26 +56,45 @@ const footerCircleAnimation = anime({
   easing: 'easeInOutQuad',
 });
 
+// const origamiCardAnimation = anime.timeline({
+//   autoplay: false,
+//   easing: 'easeInOutQuad',
+// });
+// whatCards.forEach((card, index) => {
+//   origamiCardAnimation.add(
+//     {
+//       targets: card,
+//       translateY: `-${(index + 1) * 100}%`,
+//       duration: 1000,
+//     },
+//     0
+//   );
+// });
+
+// const origamiCardAnimation = anime({
+//   targets: whatCards,
+//   autoplay: false,
+//   easing: 'easeInOutQuad',
+//   translateY: `-${1 * 100}%`,
+//   duration: 1000,
+// });
+
 const animateElement = function (div, speed = 400, offset = 800) {
   const scrollPercent = window.scrollY - div.offsetTop;
   return (scrollPercent + offset) / speed;
 };
-const origamiCardAnimation = anime({
-  targets: '.what-we-do__card--animated',
-  translateY: -200,
-  autoplay: false,
-  delay: anime.stagger(400),
-  easing: 'easeInOutQuad',
-});
 
-window.onscroll = function () {
+window.addEventListener('scroll', function () {
   footerCircleAnimation.seek(
     animateElement(footer) * footerCircleAnimation.duration
   );
-  origamiCardAnimation.seek(
-    animateElement(cards, 1000) * origamiCardAnimation.duration
-  );
+  // origamiCardAnimation.seek(
+  //   animateElement(whatCardsWrapper, 500) * origamiCardAnimation.duration
+  // );
   HeaderNameAnimation.seek(
     animateElement(header, 4000, 0) * HeaderNameAnimation.duration
   );
-};
+  whyCardAnimation.seek(
+    animateElement(whySection, 400, 650) * whyCardAnimation.duration
+  );
+});
