@@ -166,6 +166,12 @@
   width: 40px;
   filter: grayscale(100) brightness(100);
 }
+.footer-claim {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
 @media (min-width: 768px) {
   .footer-wrapper {
     flex-direction: row;
